@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+</html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet HMTL & CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background-image: url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max");
+            background-size: cover;
+        }
+
+        .globe {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: url("https://www.joaoleitao.com/viagens/wp-content/uploads/2008/05/MAPA-DO-MUNDO.jpg");
+            background-size: cover;
+            box-shadow: inset -25px -25px 25px black, 10px 10px 30px rgb(177, 177, 177) inset;
+            animation: rotate 35s linear infinite;
+        }
+
+        @keyframes rotate {
+            to {
+                background-position: 200%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="globe"></div>
+</body>
+
+</html>
